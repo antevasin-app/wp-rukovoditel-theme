@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/distribu/public_html/wp_dev/wp-content/themes/rukovoditel/
+    - export DEPLOYPATH=/home/distribu/public_html/wp_dev/wp-content/themes/
     - /usr/bin/cp -R rukovoditel $DEPLOYPATH
