@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/distribu/public_html/wp_dev/wp-content/themes/
-    - /usr/bin/cp -R wp-themes/rukovoditel $DEPLOYPATH
+    - /usr/bin/cp -R * $DEPLOYPATH
