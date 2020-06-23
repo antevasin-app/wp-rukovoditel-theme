@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+
+}
+
+/* Create two columns/boxes that floats next to each other */
+sidebar {
+  float: left;
+  width: 22%;
+
+}
+
+content {
+  float: left;
+  padding: 20px;
+  width: 78%;
+
+}
+
+/* Clear floats after the columns */
+.page-content-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
