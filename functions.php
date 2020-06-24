@@ -198,6 +198,13 @@ include ( 'customizer.php' );
 include ( 'inc/classes-custom-menus.php' );
 require_once ( 'inc/class-wp-bootstrap-navwalker.php' ); 
 require_once ( 'inc/class-av-rukovoditel-navwalker.php' );
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/antevasin-app/wp-rukovoditel-theme/',
+	__FILE__,
+	'rukovoditel'
+);
+$myUpdateChecker->setBranch('stable');
 
 $ru_app_root_path_relative = get_theme_mod('ru_app_root_path','../../ru_27/'); // '../../ru_27/';
 $ru_app_root_path_full = "https://distributed-computing.co.nz/ru_27/";
