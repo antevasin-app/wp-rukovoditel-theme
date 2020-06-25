@@ -48,7 +48,7 @@
                 	</div>
                 	<div class="theme-options">
                 	    <div class="theme-option theme-colors clearfix">
-                            <?php dynamic_sidebar( 'sidebar-modal' ); ?>    
+                            <?php dynamic_sidebar( 'modal' ); ?>    
                 		</div>
                     </div>
                 </div>

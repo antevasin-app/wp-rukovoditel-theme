@@ -1,16 +1,16 @@
 /*!
 Theme Name: rukovoditel
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
-Description: Description
-Version: 1.0.0
+Theme URI: https://rukovoditel.net/
+Author: Antevasin.app
+Author URI: https://antevasin.app/
+Description: Replicates the user interface of Rukovoditel. A free and open source Project Management App Designer. https://rukovoditel.net
+Version: 1.0.2
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: rukovoditel
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: rukovoditel, custom-logo, custom-menu,
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned.
@@ -966,4 +966,53 @@ textarea {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 1.5em;
+}
+
+/* Rukovoditel specifi styling
+--------------------------------------------- */
+.arrow-toggler {
+    color: #999999;
+    font-size: 16px !important;
+    position: relative;
+    top: 12px;
+    left: 5px;
+}
+.active-widgets {
+    top: 30px;
+    display:none;
+    position:relative;
+    padding:5px;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.active-widgets h2.widget-title {
+    font-size: 18px;
+}
+.active-widgets .open {
+    display:block;
+}
+/* Fix any issues with core Rukovoditel css files
+--------------------------------------------- */
+.page-sidebar-menu {
+    position:fixed !important;
+    width:230px;
+    z-index:2000 !important;
+}
+.theme-options h2 {
+    font-size: 18px;
+}
+.wp-toolbar {
+    margin-top: 32px !important;
+}
+@media (min-width: 992px)
+.page-sidebar-closed .page-sidebar-menu > li:hover {
+    width: 236px !important;
+    position: relative !important;
+    z-index: 2000;
+    display: block !important;
+    border: 1px solid red;
 }

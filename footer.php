@@ -27,6 +27,10 @@ jQuery(document).ready(function() {
     $('.btn-primary').click(function(){
         $('.comments-area').toggle();
     });
+    $('.arrow-toggler').click(function () {
+        $(this).toggleClass("open");
+        $('.active-widgets').toggle();            
+    });
 });
 </script>
 <!-- END JAVASCRIPTS -->

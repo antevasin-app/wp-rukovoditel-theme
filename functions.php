@@ -128,7 +128,7 @@ function rukovoditel_widgets_init() {
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Modal Sidebar', 'rukovoditel' ),
-			'id'            => 'sidebar-modal',
+			'id'            => 'modal',
 			'description'   => esc_html__( 'Add widgets here. They will be displayed in the popup sidebar via the 3 bars icon', 'rukovoditel' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
@@ -139,8 +139,8 @@ function rukovoditel_widgets_init() {
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Header Sidebar', 'rukovoditel' ),
-			'id'            => 'sidebar-header',
-			'description'   => esc_html__( 'Add widgets here. They will be displayed in the top header bar. Primarily meant for the Search Widget.', 'rukovoditel' ),
+			'id'            => 'header',
+			'description'   => esc_html__( 'Add widgets here. The Search Widget will always be added and show in the header bar.', 'rukovoditel' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -256,8 +256,8 @@ $ru_core_css = array(
     );
 
 function ru_adding_styles() {
-    wp_register_style('ru_theme_css', get_template_directory_uri() . '/css/theme.css');
-    wp_enqueue_style('ru_theme_css');
+    // wp_register_style('ru_theme_css', get_template_directory_uri() . 'style.css');
+    // wp_enqueue_style('ru_theme_css');
     $default_skin_css_file = 'css/skins/blue/blue.css';
     if ( get_theme_mod( 'ru_skin_css_file' ) ) {
         $default_skin_css_file = get_theme_mod( 'ru_skin_css_file' );        

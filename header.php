@@ -72,7 +72,7 @@
   		    </li>
   		    <!-- END USER LOGIN DROPDOWN -->
   		    <li id="header_bar_widgets">
-  		         <?php dynamic_sidebar( 'sidebar-header' ); ?>
+  		         <?php get_sidebar( 'header' ); ?>
   		    </li>
   		</ul>  	
 	    <!-- END TOP NAVIGATION MENU -->
